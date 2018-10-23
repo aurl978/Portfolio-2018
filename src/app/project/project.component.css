@@ -1,0 +1,81 @@
+.wrapper{
+    margin-bottom: 1
+    50px;
+}
+
+
+p,h5{ 
+    position: relative;
+    top: 0px;
+    left: -15px;
+    margin-top: 10px;
+    font-size: 20px;
+    color: #fff;
+ 
+}
+
+h3{
+    position: relative;
+    top: 0px;
+    left: -15px;
+    font-size: 100px;
+    color: #fff;
+    opacity: .1;
+    font-weight: 900;
+    line-height: 100%;
+    z-index: 0;
+    width: calc(100% + 300px);
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.projectInfo{
+
+    margin-bottom: 50px;
+}
+span,h5 span{
+    font-size: 15px;
+    color: #fff;
+}
+
+img{
+    margin-top: 30px;
+    transition: transform .2s;
+}
+img:hover{
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.5);   
+}
+
+.underWhite{
+    text-decoration: underline;
+    color: #fff;
+}
+.returnHome{
+    display: flex;
+    align-items: center;
+    position: fixed;
+    left: 10px;
+    top: 20px;
+   
+}
+.returnHome span{
+    font-size: 24px;
+    font-weight: 900;
+    color: white;
+    margin-left: 5px;
+}
+
+
+.screenWrapper{
+
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.flexWrap{
+    flex-wrap: wrap;
+   
+}

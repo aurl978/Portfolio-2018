@@ -1,0 +1,44 @@
+
+<a class="returnHome"routerLink="/" routerLinkActive="active">
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="white" d="M0 12l9-8v6h15v4h-15v6z"/></svg>
+ <span>Retour</span> 
+</a>
+<div class="bodyWrap">
+  <div class="wrapper">
+    <div *ngFor="let iteam of projectInfo">
+      <div class="projectInfo">
+        <h3>{{iteam.name}}</h3>
+        <h5>Objectif :</h5>
+        <div *ngFor="let resumeRow of iteam.resume">
+          <span> {{resumeRow }} </span>
+        </div>
+        
+
+        <div *ngIf="isNavale">
+        
+      <span>Cliquez ici pour <a class="underWhite" href={{iteam.download}}>Télécharger le jeu</a> </span>
+      <br>
+        </div>
+        
+        
+        <h5>Année : <span>{{iteam.year }}</span></h5>
+        <h5>Technologie : <span>{{iteam.type }}</span></h5>
+      </div>
+      
+      
+      <div class="screenWrapper" [ngClass]="{'flexWrap': iteam.name!='Meteo app'}">
+        
+        
+        <div *ngFor="let imgPath of iteam.img">
+          <img width="100%" src={{imgPath}} alt="">
+        </div>
+        <div *ngFor="let videoPath of iteam.video">
+          <video width="100%" controls>
+            <source src={{videoPath}} type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+
+    </div>
+  </div>

@@ -1,0 +1,112 @@
+/* You can add global styles to this file, and also import other style files */
+  @import url('https://fonts.googleapis.com/css?family=Poppins|Roboto+Condensed');
+
+  /* latin */
+  @font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Poppins Bold'), local('Poppins-Bold'), url(https://fonts.gstatic.com/s/poppins/v5/pxiByp8kv8JHgFVrLCz7Z1xlFd2JQEk.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
+  
+  * {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+    
+}
+body{
+    background-color: #1F1F1F;
+   /* padding: 75px 0 0;*/
+    z-index: 0;
+    margin-bottom: 50px;
+    overflow-x: hidden;
+}
+
+section{
+    position: relative;
+ 
+}
+
+
+
+/*==========================================================
+                            STRUCTURE 
+ ==========================================================*/
+
+
+ #bodyWrap {
+    background-color: #1F1F1F;
+    z-index: 1;
+    padding-bottom: 50px;
+}
+
+ /*=============================
+        WRAPPER 
+=============================*/
+.wrapper {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 150px;
+    width: 100%;
+    background-color: #1f1f1f;
+}
+a,header nav .menu{
+    text-decoration: none;
+}
+
+
+/*=============================
+            FLEX 
+=============================*/
+flex{
+    display: flex;
+    width: 100%;
+}
+
+
+
+
+/*=============================
+        HEADER 
+=============================*/
+header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 100px;
+        transition: ease all .4s;
+}
+
+header h3{
+    color: #fff;
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: .75px;
+}
+
+header nav a {
+
+    color: #fff;
+    text-decoration: none;
+    opacity: .8;
+    display: inline-block;
+    margin-left: 25px;
+    font-weight: 300;
+    font-size: 14px;
+    letter-spacing: 1.78px;
+}
+
+.hamburger,header nav .menu{
+    display: none;
+}
+
+a.contactMe{
+    background: #ed6464;
+    padding: 10px;
+    transition: background ease .4s;
+}
