@@ -11,13 +11,13 @@ export class ProjectComponent implements OnInit {
   public projectInfo = [];
   projectName: string;
   private sub: any;
-  isNavale:boolean;
+  showLink:boolean;
   constructor(private route: ActivatedRoute) { }
   
   ngOnInit() {
     this.sub = this.route.params.subscribe(params => {
       this.projectName = params['projectName'];
-      this.isNavale=this.projectName=="BatailleNavale"?true:false;
+      this.showLink=this.projectName=="BatailleNavale"||this.projectName=="1530"?true:false;
       if (this.projectName === "EuroPLV") {
         //EuroPLV
         this.projectInfo.push(
@@ -52,10 +52,11 @@ export class ProjectComponent implements OnInit {
               "../../assets/ressources/1530/Carousel.png",
             ],
             video:[],
+            lien:'https://le1530.eclair.ec-lyon.fr',
           }
           );
         } else if (this.projectName === "BatailleNavale") {
-          //Centre Equestre
+          //Bataille Navale
           this.projectInfo.push(
             {
               name: "Bataille Navale",
@@ -70,7 +71,7 @@ export class ProjectComponent implements OnInit {
                 "../../assets/ressources/batailleNavale/bataille4.png",
               ],
               video:[],
-              download:'../../assets/ressources/batailleNavale/BatailleNavale.jar'
+              lien:'../../assets/ressources/batailleNavale/BatailleNavale.jar'
             }
             );
           }
@@ -81,7 +82,7 @@ export class ProjectComponent implements OnInit {
                 name: "VOAR Clothing",
                 resume: [`
                 Ce projet est un projet personnel, il avait pour but de simuler un site de vente de vêtements.
-                Ce site permet à l'utilisateur de voir l'ensemble des produits proposés (T-shirt, Sweat), de les trier par prix,dates de sorties. Et d'ajouter à son panier les éléments de son choix (taille,quantité)
+                Ce site permet à l'utilisateur de voir l'ensemble des produits proposés (T-shirt, Sweat), de les trier par prix, dates de sorties. Et d'ajouter à son panier les éléments de son choix (taille,quantité).
                 
                 
                 

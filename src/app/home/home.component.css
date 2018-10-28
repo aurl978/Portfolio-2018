@@ -175,7 +175,9 @@ display: flex;
 .skillsWrapper .web,.skillsWrapper .web{
     width: 50%;
 }
-
+.content{
+    padding-top: 10%;
+}
 
 /*==========================================================
 PROJETS 
@@ -186,7 +188,6 @@ section#me,section#projects{
 }
 .project-wrapper {
     margin-bottom: 25px;
-    
     width: calc(100% + 150px);
     display: flex;
     -ms-flex-wrap: wrap;
